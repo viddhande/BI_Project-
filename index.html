@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt Outlet Size Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #343a40;
+        }
+        .blinkit-image {
+            width: 100px; /* Adjust width for shorter image */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 15px; /* Space between image and heading */
+            float: left; /* Align image to the left */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px; /* Space between header and form */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://imgs.search.brave.com/D2cYeUlHAswCLi6fZaepStXhvlkX3Yc7C9g6kmIhWM0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0IvYmxpbmtp/dC1sb2dvLTU2OEQz/MkM4RUMtc2Vla2xv/Z28uY29tLnBuZw" alt="BlinkIt Logo" class="blinkit-image">
+            <h2>BlinkIt Outlet Size Prediction</h2>
+        </div>
+        <form action="/" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="Item_Fat_Content">Item Fat Content:</label>
+                <input type="text" class="form-control" id="Item_Fat_Content" name="Item_Fat_Content" required>
+            </div>
+            <div class="form-group">
+                <label for="Item_Identifier">Item Identifier:</label>
+                <input type="text" class="form-control" id="Item_Identifier" name="Item_Identifier" required>
+            </div>
+            <div class="form-group">
+                <label for="Item_Type">Item Type:</label>
+                <input type="text" class="form-control" id="Item_Type" name="Item_Type" required>
+            </div>
+            <div class="form-group">
+                <label for="Outlet_Establishment_Year">Outlet Establishment Year:</label>
+                <input type="number" class="form-control" id="Outlet_Establishment_Year" name="Outlet_Establishment_Year" required>
+            </div>
+            <div class="form-group">
+                <label for="Outlet_Identifier">Outlet Identifier:</label>
+                <input type="text" class="form-control" id="Outlet_Identifier" name="Outlet_Identifier" required>
+            </div>
+            <div class="form-group">
+                <label for="Outlet_Location_Type">Outlet Location Type:</label>
+                <input type="text" class="form-control" id="Outlet_Location_Type" name="Outlet_Location_Type" required>
+            </div>
+            <div class="form-group">
+                <label for="Outlet_Type">Outlet Type:</label>
+                <input type="text" class="form-control" id="Outlet_Type" name="Outlet_Type" required>
+            </div>
+            <div class="form-group">
+                <label for="Item_Visibility">Item Visibility:</label>
+                <input type="number" step="0.01" class="form-control" id="Item_Visibility" name="Item_Visibility" required>
+            </div>
+            <div class="form-group">
+                <label for="Item_Weight">Item Weight:</label>
+                <input type="number" step="0.01" class="form-control" id="Item_Weight" name="Item_Weight" required>
+            </div>
+            <div class="form-group">
+                <label for="Sales">Sales:</label>
+                <input type="number" step="0.01" class="form-control" id="Sales" name="Sales" required>
+            </div>
+            <div class="form-group">
+                <label for="Rating">Rating:</label>
+                <input type="number" step="0.01" class="form-control" id="Rating" name="Rating" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
